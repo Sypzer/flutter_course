@@ -108,12 +108,12 @@ class _HomePageState extends State<HomePage> {
                 //Center Column contents horizontally,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Image.network(
-                        'https://media4.giphy.com/media/3oKIPEhsPndA61JZf2/giphy.gif'),
+                        'https://media3.giphy.com/media/67ThRZlYBvibtdF9JH/200.gif'),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       child: DropdownButton(
                         isExpanded: true,
@@ -181,8 +181,8 @@ class _HomePageState extends State<HomePage> {
                   SizedBox(
                     height: 16,
                   ),
-                  Container(
-                    width: MediaQuery.of(context).size.width - 16,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: 'Enter Amount',
