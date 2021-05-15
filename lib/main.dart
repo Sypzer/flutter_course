@@ -74,13 +74,13 @@ class _HomePageState extends State<HomePage> {
   }
 
   //This function will invert the fromCurrency and toCurrency variables
-  void invert() async {
+  void invert() {
     setState(() {
       String aux = fromCurrencyName;
       fromCurrencyName = toCurrencyName;
       toCurrencyName = aux;
     });
-    await updateExchangeRate();
+    updateExchangeRate();
   }
 
   @override
